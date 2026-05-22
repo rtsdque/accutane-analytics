@@ -153,8 +153,6 @@ medical advice, clinical guidance, or endorsement of any treatment. All findings
 interpreted within the context of their data source limitations. Consult a licensed 
 dermatologist or physician before making any treatment decisions.
 
----
-
 ## Built With
 
 PostgreSQL · Python · pandas · VADER · scikit-learn · Streamlit · Plotly · Arctic Shift · FDA FAERS
