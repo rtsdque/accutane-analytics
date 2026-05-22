@@ -10,8 +10,8 @@ data collection through NLP, machine learning, and an interactive dashboard.
 
 ## Project Overview
 
-Isotretinoin (commonly known as Accutane) is one of the most effective — and most 
-controversial — treatments for severe acne. Despite widespread use, accessible and structured 
+Isotretinoin (commonly known as Accutane) is one of the most effective, and most 
+controversial, treatments for severe acne. Despite widespread use, accessible and structured 
 data on real-world patient outcomes remains limited. This project fills that gap by combining 
 two independent data sources into a unified analytics pipeline.
 
@@ -56,25 +56,6 @@ treatment timelines. Together they provide a more complete picture than either s
 | Visualization | matplotlib, seaborn, Plotly |
 | Dashboard | Streamlit |
 | Hosting | Railway + Streamlit Cloud |
-
----
-
-## Project Architecture
-FAERS Raw Files (.txt)          r/Accutane (Arctic Shift API)
-↓                                    ↓
-Python Filtering                    PRAW / requests
-↓                                    ↓
-processed/ CSVs              reddit_accutane.csv
-↓                                    ↓
-└──────────── PostgreSQL ────────────┘
-↓
-NLP Pipeline
-(VADER + spaCy)
-↓
-ML Modeling
-(K-Means, LDA, LR)
-↓
-Streamlit Dashboard
 
 ---
 
@@ -153,7 +134,7 @@ requirements rather than treatment failure.
 
 ## Limitations
 
-- FAERS captures adverse events only — it systematically underrepresents positive outcomes
+- FAERS captures adverse events only which systematically underrepresents positive outcomes
 - Reddit data reflects self-selected patient voices and may not be demographically representative
 - VADER sentiment analysis was designed for social media text but may misclassify medically 
 nuanced posts
@@ -171,33 +152,6 @@ This project is for academic research and portfolio purposes only. It does not c
 medical advice, clinical guidance, or endorsement of any treatment. All findings should be 
 interpreted within the context of their data source limitations. Consult a licensed 
 dermatologist or physician before making any treatment decisions.
-
----
-
-## Project Structure
-Accutane Database/
-├── data/
-│   └── faers_raw/          # Raw FAERS quarterly files
-├── processed/              # Filtered and enriched CSVs
-├── scripts/
-│   ├── explore_faers.py
-│   ├── collect_faers.py
-│   ├── collect_reddit.py
-│   ├── nlp_processing.py
-│   ├── eda.py
-│   ├── ml_models.py
-│   └── load_to_postgres.py
-├── dashboard/
-│   └── app.py              # Streamlit dashboard
-├── charts/                 # Static EDA visualizations
-└── README.md
-
----
-
-## Author
-
-Business Analytics major, Applied Mathematics minor. Healthcare industry background. 
-Built as a portfolio centerpiece for MS and MBA program applications.
 
 ---
 
