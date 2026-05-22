@@ -6,8 +6,6 @@ treatment outcomes using FDA adverse event data and patient-reported Reddit expe
 Built as a portfolio centerpiece demonstrating an end-to-end analytics pipeline — from raw 
 data collection through NLP, machine learning, and an interactive dashboard.
 
----
-
 ## Project Overview
 
 Isotretinoin (commonly known as Accutane) is one of the most effective, and most 
@@ -20,8 +18,6 @@ two independent data sources into a unified analytics pipeline.
 - How does patient sentiment evolve across treatment months?
 - Can machine learning identify distinct patient experience profiles?
 - Is there a detectable signal connecting post engagement patterns to mental health content?
-
----
 
 ## Data Sources
 
@@ -42,8 +38,6 @@ design, clinically grounded, and globally representative. Reddit captures the fu
 experience spectrum — positive outcomes, side effect management, emotional journeys, and 
 treatment timelines. Together they provide a more complete picture than either source alone.
 
----
-
 ## Tech Stack
 
 | Layer | Tool |
@@ -56,8 +50,6 @@ treatment timelines. Together they provide a more complete picture than either s
 | Visualization | matplotlib, seaborn, Plotly |
 | Dashboard | Streamlit |
 | Hosting | Railway + Streamlit Cloud |
-
----
 
 ## Pipeline Phases
 
@@ -106,8 +98,6 @@ Interactive Streamlit dashboard with five pages: Overview, FAERS Analysis, Reddi
 ML Insights, and About. Built with Plotly for interactive charts, custom dark theme, and 
 contextual annotations throughout.
 
----
-
 ## Key Findings
 
 1. **Depression is the third most reported adverse reaction in FAERS** — ranking above 
@@ -130,8 +120,6 @@ tracking, side effect management, and post-treatment success.
 pregnancy are the top two reported reactions, reflecting mandatory iPLEDGE reporting 
 requirements rather than treatment failure.
 
----
-
 ## Limitations
 
 - FAERS captures adverse events only which systematically underrepresents positive outcomes
@@ -143,8 +131,6 @@ not clinical application
 - Treatment month analysis is limited by small sample sizes beyond month 6
 - Combination drug entries (e.g. erythromycin/isotretinoin) were retained in collection 
 and flagged for future filtering
-
----
 
 ## Disclaimer
 
