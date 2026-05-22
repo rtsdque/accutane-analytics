@@ -134,7 +134,7 @@ if page == "Overview":
         fig.update_traces(hovertemplate="<b>Sentiment:</b> %{x}<br><b>Count:</b> %{y}<extra></extra>")
         fig.update_layout(showlegend=False, **base_layout())
         st.plotly_chart(fig, use_container_width=True)
-        st.caption("46% of r/Accutane posts scored positive sentiment — suggesting that despite significant side effects, more patients report a net positive treatment experience than negative.")
+        st.caption("46% of r/Accutane posts scored positive sentiment, compared to 39% negative and 15% neutral — suggesting that despite significant side effects, more patients report a net positive treatment experience than negative.")
 
     with col_r:
         st.subheader("Top 10 Adverse Reactions (FAERS)")
