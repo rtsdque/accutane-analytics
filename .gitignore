@@ -18,3 +18,9 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Credentials
+.env
+*.env
+config.py
+secrets.py
